@@ -4,9 +4,6 @@
 ### Concepts to be used:
 - Google AUTH
 - Payments API
-<<<<<<< HEAD
-- Location
-=======
 - Location
 
 # Commit History:
@@ -17,5 +14,4 @@
 - Learned about Navigator.
 #### Reference Image:
 - Login Screen
-![ref_img1](./Reference%20Images/ref_img1.png)
->>>>>>> 45fc847 (feat: Created login page)
+<img src="./Reference%20Images/ref_img1.png"  width="180" height="320">
