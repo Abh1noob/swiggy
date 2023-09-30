@@ -208,7 +208,7 @@ class Login extends StatelessWidget {
                         ),
                         Container(
                           alignment: Alignment.centerRight,
-                          padding: const EdgeInsets.only(left: 250),
+                          padding: const EdgeInsets.only(left: 260),
                           child: const Icon(
                             Icons.arrow_forward_ios_rounded,
                             color: Color(0xFF171a1f),

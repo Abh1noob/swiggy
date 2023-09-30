@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
 class SwiggySearch extends StatelessWidget {
-  const SwiggySearch({super.key});
+  final String description;
+  const SwiggySearch({Key? key, required this.description}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
       padding: const EdgeInsets.only(top: 20),
-      child: const SizedBox(
+      child:  SizedBox(
         width: 380,
         child: TextField(
           decoration: InputDecoration(
-            suffixIcon: Row(
+            suffixIcon: const Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Icon(
@@ -32,10 +33,10 @@ class SwiggySearch extends StatelessWidget {
                 SizedBox(width: 15,)
               ],
             ),
-            border: OutlineInputBorder(
+            border: const OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(12)),
             ),
-            hintText: 'Dishes, restaurants, groceries - Find it ...',
+            hintText: description,
           ),
         ),
       ),

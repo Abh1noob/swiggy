@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:swiggy/pages/login.dart';
 import '../components/SwiggySearch.dart';
 
 class Swiggy extends StatelessWidget {
@@ -10,12 +11,30 @@ class Swiggy extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text(
-            "Location to be implemented",
-            style: TextStyle(color: Colors.black),
+        title: const Text(
+          "Location to be implemented",
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: const Color(0xFFeff0f0),
+        elevation: 0,
+        actions: [
+          IconButton(
+            padding: EdgeInsets.only(right: 35),
+            icon: Icon(
+              Icons.account_circle_rounded,
+              size: 40,
+              color: Colors.grey[800],
+            ),
+            // Within the `FirstRoute` widget
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Login()),
+              );
+            },
           ),
-          backgroundColor: const Color(0xFFeff0f0),
-          elevation: 0),
+        ],
+      ),
       backgroundColor: const Color(0xFFf1f1f1),
       body: Container(
         padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
@@ -23,14 +42,16 @@ class Swiggy extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SwiggySearch(),
+              const SwiggySearch(
+                description: 'Dishes, restaurants, groceries - Find it ...',
+              ),
               const SizedBox(
                 height: 40,
               ),
               Row(
                 children: [
                   Container(
-                    padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(11, 0, 0, 0),
                     child: const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -81,7 +102,13 @@ class Swiggy extends StatelessWidget {
                     children: [
                       Expanded(
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Login()),
+                            );
+                          },
                           child: Expanded(
                             flex: 5,
                             child: Container(
@@ -90,7 +117,7 @@ class Swiggy extends StatelessWidget {
                                 color: const Color(0xFFfefefe),
                                 boxShadow: const [
                                   BoxShadow(
-                                      blurRadius: 100,
+                                      blurRadius: 110,
                                       blurStyle: BlurStyle.outer,
                                       color: Color.fromARGB(40, 0, 0, 0))
                                 ],
@@ -111,7 +138,7 @@ class Swiggy extends StatelessWidget {
                                         style: TextStyle(
                                             color: Color(0xFF2e2e2e),
                                             fontWeight: FontWeight.w900,
-                                            fontSize: 20),
+                                            fontSize: 17),
                                       ),
                                       const SizedBox(
                                         height: 5,
@@ -120,7 +147,7 @@ class Swiggy extends StatelessWidget {
                                         'FROM RESTAURANTS',
                                         style: TextStyle(
                                             color: Color(0xFF888888),
-                                            fontSize: 12),
+                                            fontSize: 11),
                                       ),
                                       const SizedBox(
                                         height: 5,
@@ -141,7 +168,7 @@ class Swiggy extends StatelessWidget {
                                           children: [
                                             Icon(
                                               Icons.percent,
-                                              size: 12,
+                                              size: 11,
                                               color: Color(0xFFc2511b),
                                             ),
                                             Text(
@@ -149,7 +176,7 @@ class Swiggy extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Color(0xFFc2511b),
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 12),
+                                                  fontSize: 10),
                                             ),
                                           ],
                                         ),
@@ -164,7 +191,13 @@ class Swiggy extends StatelessWidget {
                       ),
                       Expanded(
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Login()),
+                            );
+                          },
                           child: Expanded(
                             flex: 5,
                             child: Container(
@@ -173,7 +206,7 @@ class Swiggy extends StatelessWidget {
                                 color: const Color(0xFFfefefe),
                                 boxShadow: const [
                                   BoxShadow(
-                                      blurRadius: 100,
+                                      blurRadius: 110,
                                       blurStyle: BlurStyle.outer,
                                       color: Color.fromARGB(40, 0, 0, 0))
                                 ],
@@ -194,7 +227,7 @@ class Swiggy extends StatelessWidget {
                                         style: TextStyle(
                                             color: Color(0xFF2e2e2e),
                                             fontWeight: FontWeight.w900,
-                                            fontSize: 20),
+                                            fontSize: 17),
                                       ),
                                       const SizedBox(
                                         height: 5,
@@ -203,7 +236,7 @@ class Swiggy extends StatelessWidget {
                                         'INSTANT GROCERY',
                                         style: TextStyle(
                                             color: Color(0xFF888888),
-                                            fontSize: 12),
+                                            fontSize: 11),
                                       ),
                                       const SizedBox(
                                         height: 5,
@@ -224,7 +257,7 @@ class Swiggy extends StatelessWidget {
                                           children: [
                                             Icon(
                                               Icons.percent,
-                                              size: 12,
+                                              size: 11,
                                               color: Color(0xFFc2511b),
                                             ),
                                             Text(
@@ -232,7 +265,7 @@ class Swiggy extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Color(0xFFc2511b),
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 12),
+                                                  fontSize: 10),
                                             ),
                                           ],
                                         ),
@@ -251,7 +284,13 @@ class Swiggy extends StatelessWidget {
                     children: [
                       Expanded(
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Login()),
+                            );
+                          },
                           child: Expanded(
                             flex: 5,
                             child: Container(
@@ -260,7 +299,7 @@ class Swiggy extends StatelessWidget {
                                 color: const Color(0xFFfefefe),
                                 boxShadow: const [
                                   BoxShadow(
-                                      blurRadius: 100,
+                                      blurRadius: 110,
                                       blurStyle: BlurStyle.outer,
                                       color: Color.fromARGB(40, 0, 0, 0))
                                 ],
@@ -281,7 +320,7 @@ class Swiggy extends StatelessWidget {
                                         style: TextStyle(
                                             color: Color(0xFF2e2e2e),
                                             fontWeight: FontWeight.w900,
-                                            fontSize: 20),
+                                            fontSize: 17),
                                       ),
                                       const SizedBox(
                                         height: 5,
@@ -290,7 +329,7 @@ class Swiggy extends StatelessWidget {
                                         'EAT OUT & SAVE MORE',
                                         style: TextStyle(
                                             color: Color(0xFF888888),
-                                            fontSize: 12),
+                                            fontSize: 11),
                                       ),
                                       const SizedBox(
                                         height: 5,
@@ -311,7 +350,7 @@ class Swiggy extends StatelessWidget {
                                           children: [
                                             Icon(
                                               Icons.percent,
-                                              size: 12,
+                                              size: 11,
                                               color: Color(0xFFc2511b),
                                             ),
                                             Text(
@@ -319,7 +358,7 @@ class Swiggy extends StatelessWidget {
                                               style: TextStyle(
                                                   color: Color(0xFFc2511b),
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 12),
+                                                  fontSize: 10),
                                             ),
                                           ],
                                         ),
@@ -344,20 +383,27 @@ class Swiggy extends StatelessWidget {
                                 children: [
                                   Expanded(
                                     child: InkWell(
-                                      onTap: () {},
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const Login()),
+                                        );
+                                      },
                                       child: Expanded(
                                         flex: 5,
                                         child: Container(
                                           margin: const EdgeInsets.fromLTRB(
                                               0, 0, 0, 5),
-                                          width: 205,
+                                          width: 175,
                                           decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(15),
                                             color: Colors.white,
                                             boxShadow: const [
                                               BoxShadow(
-                                                  blurRadius: 100,
+                                                  blurRadius: 110,
                                                   blurStyle: BlurStyle.outer,
                                                   color: Color.fromARGB(
                                                       40, 0, 0, 0))
@@ -381,14 +427,14 @@ class Swiggy extends StatelessWidget {
                                                               Color(0xFF2e2e2e),
                                                           fontWeight:
                                                               FontWeight.w900,
-                                                          fontSize: 20),
+                                                          fontSize: 17),
                                                     ),
                                                     Text(
                                                       'PICK-UP & DROP',
                                                       style: TextStyle(
                                                           color:
                                                               Color(0xFF888888),
-                                                          fontSize: 12),
+                                                          fontSize: 11),
                                                     ),
                                                   ],
                                                 ),
@@ -401,20 +447,27 @@ class Swiggy extends StatelessWidget {
                                   ),
                                   Expanded(
                                     child: InkWell(
-                                      onTap: () {},
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const Login()),
+                                        );
+                                      },
                                       child: Expanded(
                                         flex: 5,
                                         child: Container(
                                           margin: const EdgeInsets.fromLTRB(
                                               0, 0, 0, 5),
-                                          width: 205,
+                                          width: 175,
                                           decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(15),
                                             color: Colors.white,
                                             boxShadow: const [
                                               BoxShadow(
-                                                  blurRadius: 100,
+                                                  blurRadius: 110,
                                                   blurStyle: BlurStyle.outer,
                                                   color: Color.fromARGB(
                                                       40, 0, 0, 0))
@@ -438,14 +491,14 @@ class Swiggy extends StatelessWidget {
                                                               Color(0xFF2e2e2e),
                                                           fontWeight:
                                                               FontWeight.w900,
-                                                          fontSize: 20),
+                                                          fontSize: 17),
                                                     ),
                                                     Text(
                                                       'UNIQUE FINDS',
                                                       style: TextStyle(
                                                           color:
                                                               Color(0xFF888888),
-                                                          fontSize: 12),
+                                                          fontSize: 11),
                                                     ),
                                                   ],
                                                 ),
