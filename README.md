@@ -14,7 +14,7 @@
 - Learned about Navigator.
 #### Reference Image:
 - Login Screen
-<img src="./Reference%20Images/commit1/ref_img1.jpg"  width="180" height="320">
+<img src="./Reference%20Images/commit1/ref_img1.png"  width="180" height="320">
 
 
 ## Commit 2: Created Home Screen
@@ -39,6 +39,8 @@
 
 #### Reference Image:
 - Homescreen with Navbar
-<img src="./Reference%20Images/commit3/ref_img3.jpg"  width="180" height="320">     <img src="./Reference%20Images/commit3/ref_img4.jpg"  width="180" height="320">
+  
+<img src="./Reference%20Images/commit3/ref_img3.png"  width="180" height="320">     <img src="./Reference%20Images/commit3/ref_img4.png"  width="180" height="320">
+
 - Login Screen (No Navbar here)
-<img src="./Reference%20Images/commit3/ref_img5.jpg"  width="180" height="320">
+<img src="./Reference%20Images/commit3/ref_img5.png"  width="180" height="320">
