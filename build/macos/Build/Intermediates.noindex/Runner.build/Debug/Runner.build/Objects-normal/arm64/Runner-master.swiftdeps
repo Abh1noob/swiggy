@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
-options: "8aed2d5dd75d8c9a787473637064c760b39d6a0a2d08742f99d532555c90ca33"
-build_start_time: [1695985586, 993082000]
-build_end_time: [1695985589, 369178000]
-inputs:
-  "/Users/abhi/Coding/swiggy/swiggy/swiggy/macos/Flutter/GeneratedPluginRegistrant.swift": [1695985578, 251551847]
-  "/Users/abhi/Coding/swiggy/swiggy/swiggy/macos/Runner/AppDelegate.swift": [1683735221, 0]
-  "/Users/abhi/Coding/swiggy/swiggy/swiggy/macos/Runner/MainFlutterWindow.swift": [1683735221, 0]

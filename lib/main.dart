@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy/pages/dineout.dart';
-import 'package:swiggy/pages/food.dart';
-import 'package:swiggy/pages/instamart.dart';
-import 'package:swiggy/pages/minis.dart';
-import 'package:swiggy/pages/swiggy.dart';
+import 'package:swiggy/features/dineout/ui/dineout.dart';
+import 'package:swiggy/features/food/ui/food.dart';
+import 'package:swiggy/features/instamart/ui/instamart.dart';
+import 'package:swiggy/features/minis/ui/minis.dart';
+import 'package:swiggy/features/home/ui/swiggy.dart';
 
 void main() => runApp(const MyApp());
 
@@ -29,12 +29,12 @@ class BottomNavigationBarExample extends StatefulWidget {
 class _BottomNavigationBarExampleState
     extends State<BottomNavigationBarExample> {
   int _selectedIndex = 0;
-  static const List<Widget> _widgetOptions = <Widget>[
+  static final List<Widget> _widgetOptions = <Widget>[
     Swiggy(),
-    Food(),
-    Instamart(),
-    Dineout(),
-    Minis(),
+    const Food(),
+    const Instamart(),
+    const Dineout(),
+    const Minis(),
   ];
 
   void _onItemTapped(int index) {
